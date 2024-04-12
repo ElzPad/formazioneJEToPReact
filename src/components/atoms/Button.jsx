@@ -1,18 +1,14 @@
 import { useState } from "react";
 
-export default function Button() {
-  const [likes, setLikes] = useState(243423);
-
+export default function Button(props) {
+  const baseUrl = "http://localhost:3000/JuniorEnterprises"
   return (
     <>
       <button onClick={() => {
-        setLikes((prevValue) => {
-          return prevValue+1;
-        });
-        console.log(likes);
+        props.updateUrl(baseUrl+"?continent="+props.continent)
       }}
       >
-        Mi piace: {likes}
+        {props.continent}
       </button>
     </>
   )
