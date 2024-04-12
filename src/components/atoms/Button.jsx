@@ -1,10 +1,12 @@
+import { useState } from "react";
+
 export default function Button() {
-  let likes = 123121;
+  const [likes, setLikes] = useState(243423);
 
   return (
     <>
       <button onClick={() => {
-        likes++;
+        setLikes(likes+1);
         console.log(likes);
       }}
       >
