@@ -17,10 +17,10 @@ export default function JEList() {
       setData(jsonData);
       setIsLoading(false);
       console.log(jsonData);
-    }).catch(() => {
+    }).catch((error) => {
       setIsLoading(false);
       setIsError(true);
-      console.log("Error occurred while fetching");
+      console.log("Error occurred while fetching: ",error);
     })
   };
 
@@ -37,6 +37,19 @@ export default function JEList() {
       
       <Button continent="Europe" updateUrl={setUrl}/>
       <Button continent="North America" updateUrl={setUrl}/>
+      <Button continent="Asia" updateUrl={setUrl}/>
+      
+      <ul>
+        {data &&
+          data.map( juniorEnt => (
+            <li key={juniorEnt.id}>
+              <h3>{juniorEnt.name}</h3>
+              <p>{juniorEnt.country}</p>
+              <p>{juniorEnt.continent}</p>
+            </li>
+          ))
+        }
+      </ul> 
     </>
   )
 }
