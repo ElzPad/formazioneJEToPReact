@@ -6,7 +6,9 @@ export default function Button() {
   return (
     <>
       <button onClick={() => {
-        setLikes(likes+1);
+        setLikes((prevValue) => {
+          return prevValue+1;
+        });
         console.log(likes);
       }}
       >
