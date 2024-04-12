@@ -1,10 +1,11 @@
-import Button from './components/atoms/Button'
 import { useState } from 'react'
 import './App.css'
+import Button from './components/atoms/Button'
+import JEList from './components/molecules/JEList'
 
 function App() {
   return (
-    <Button />
+    <JEList />
   )
 }
 

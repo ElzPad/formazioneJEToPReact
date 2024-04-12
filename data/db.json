@@ -1,0 +1,47 @@
+{
+  "JuniorEnterprises": [
+    {
+      "name": "JEToP",
+      "id": "1",
+      "country": "Italy",
+      "continent": "Europe"
+    },
+    {
+      "name": "JEMP",
+      "id": "2",
+      "country": "Italy",
+      "continent": "Europe"
+    },
+    {
+      "name": "JEVE",
+      "id": "3",
+      "country": "Italy",
+      "continent": "Europe"
+    },
+    {
+      "name": "Junitec",
+      "id": "4",
+      "country": "Portugal",
+      "continent": "Europe"
+    },
+    {
+      "name": "Junior Entreprise EPFL",
+      "id": "5",
+      "country": "Switzerland",
+      "continent": "Europe"
+    },
+    {
+      "name": "CUBE Consulting",
+      "id": "6",
+      "country": "United States",
+      "continent": "North America"
+    },
+    
+    {
+      "name": "Lumnus Consulting",
+      "id": "7",
+      "country": "United States",
+      "continent": "North America"
+    }
+  ]
+}
